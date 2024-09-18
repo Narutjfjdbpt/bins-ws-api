@@ -4,7 +4,7 @@ const { binLookup } = require("@arnabxd/bin-lookup");
 
 const app = express();
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 
 app.get("/api/:bin", async (req, res) => {
   let data = await binLookup(req.params.bin, "bins.ws");
